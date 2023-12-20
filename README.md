@@ -33,8 +33,10 @@ python manage.py createsuperuser
 
 ```
 docker-compose up -d
+```
 
 Остановка проекта осуществляется командой.
+
 ```
 docker-compose stop
 ```
