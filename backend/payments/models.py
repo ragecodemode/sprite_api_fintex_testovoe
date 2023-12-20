@@ -6,5 +6,11 @@ class Item(models.Model):
     description = models.CharField('описание', max_length=150, blank=False)
     price = models.PositiveIntegerField('цена', blank=False, default=0,)
 
+    currency = models.CharField(
+        'валюта',
+        choices=[("usd", "USD"), ("eur", "EUR")],
+        max_length=5,
+    )
+
     def __str__(self):
         return self.name

@@ -37,7 +37,7 @@ class BuyItemView(View):
                 line_items=[
                     {
                         'price_data': {
-                            'currency': 'usd',
+                            'currency': item.currency,
                             'product_data': {
                                 'name': item.name,
                                 'description': item.description,
